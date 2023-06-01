@@ -1,0 +1,90 @@
+.screen-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../Assets/background.jpeg');
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.screen-left {
+    width: 50%;
+    height: 100%;
+    padding: 50px;
+}
+
+.screen-left h1 {
+    font-size: 55px;
+    color: #fff;
+}
+
+.input-fields {
+    display: flex;
+    width: fit-content;
+    margin: 30px 0;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.input-fields h1 {
+    font-size: 20px;
+}
+
+input[type="date"] {
+    background-color: #fff;
+    padding: 15px;
+    /* position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; */
+    font-family: "Roboto Mono", monospace;
+    color: #000;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.input-fields button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 21px;
+    transition: 300ms all ease-in-out;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.input-fields button:hover {
+    background-color: darkcyan;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+#result-id {
+    color: white;
+}
+
+.input-fields select {
+    font-size: 20px;
+    padding: 10px 20px;
+    outline: none;
+    border-radius: 10px;
+}
+
+.result-window img {
+    width: 100%;
+    margin: 40px;
+    border-radius: 20px;
+    border: 2px solid #000;
+}

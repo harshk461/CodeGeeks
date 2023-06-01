@@ -1,0 +1,61 @@
+.revenue-screen {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.revenue-screen h1 {
+    font-size: 40px;
+}
+
+.revenue-fields {
+    width: 100%;
+    padding: 50px 100px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 50px;
+
+}
+
+.revenue-box {
+    width: calc(90%/4);
+    padding: 50px 0;
+    display: flex;
+    background-color: var(--lightBlue);
+    flex-direction: column;
+    border: 3px solid var(--darkBlue);
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    transition: 300ms all ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.revenue-box h3 {
+    text-decoration: underline;
+    color: var(--darkBlue);
+}
+
+.revenue-box:hover {
+    transform: scale(1.1);
+}
+
+.revenue-screen button {
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: fit-content;
+    margin: auto;
+    margin: 20px auto;
+    transition: 300ms all ease-in-out;
+    border: 2px solid #fff;
+}
+
+.revenue-screen button:hover {
+    background-color: var(--lightBlue);
+    color: #000;
+    border: 2px solid #fff;
+}
