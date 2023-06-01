@@ -1,0 +1,256 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--blue);
+    border-top: 3px solid #000;
+}
+
+.home-section1,
+.home-section2 {
+    width: 100%;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.home-section2 {
+    padding-top: 0;
+}
+
+.home-section2 img {
+    width: min(80%, 1100px);
+}
+
+.home-section1 h1 {
+    font-size: 50px;
+}
+
+.home-section1 h6 {
+    font-size: 20px;
+    width: min(90%, 800px);
+    text-align: center;
+    color: white;
+}
+
+.home-section1-button {
+    width: 40%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-section1-button button {
+    padding: 10px 40px;
+    border: none;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.home-section1-button button:first-child {
+    background-color: rgb(244, 96, 96);
+    color: white;
+    transition: 200ms all ease-in-out;
+}
+
+.home-section1-button button:first-child:hover {
+    background-color: red;
+}
+
+.home-section2 img {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    ;
+    border-radius: 10px;
+}
+
+.preferred-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.preferred-features .feature-box-home {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    height: auto;
+    width: calc(90%/3);
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 300ms all ease-in-out;
+}
+
+.feature-box:hover {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.feature-box img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.feature-box h3 {
+    font-size: 25px;
+}
+
+.feature-box h6 {
+    font-size: 20px;
+    font-weight: 400;
+    color: grey;
+}
+
+.price-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+.price-window {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    justify-content: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.price-box {
+    width: calc(80%/6);
+    padding: 30px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+    overflow: hidden;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.price-title {
+    width: fit-content;
+}
+
+.price-title h2 {
+    font-size: 25px;
+    color: grey;
+}
+
+.price-title .price-underline {
+    width: 80%;
+    height: 3px;
+    background: rgb(0, 103, 255);
+}
+
+.price-box img {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin: 20px auto;
+}
+
+.price-box button {
+    padding: 5px 0;
+    margin: 10px 0;
+    border: 2px solid rgb(0, 103, 255);
+    background-color: #e8f1ff;
+    transition: 200ms all ease-in-out;
+    color: rgb(0, 103, 255);
+    font-size: 17px;
+}
+
+.price-box button:hover {
+    background-color: rgb(0, 103, 255);
+    color: aliceblue;
+}
+
+.sponsor-window {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.sponsors {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sponsor-window .sponsors img,
+.sponsor-window .sponsors svg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+@media (max-width:400px) {
+    .home-section2 {
+        display: none;
+    }
+
+    .home-section1-button {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:800px) {
+    .home-section1-button {
+        width: 90%;
+        display: flex;
+        gap: 20px;
+    }
+
+    .preferred-features .feature-box-home {
+        flex-direction: column;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .feature-box {
+        width: 100%;
+    }
+
+    .price-window {
+        flex-direction: column;
+        padding: 50px;
+        grid-gap: 30px;
+    }
+
+    .price-box {
+        width: 100%;
+    }
+}
+
+@media (max-width:1000px) {
+    .preferred-features .feature-box-home {
+        width: 100%;
+
+    }
+}
