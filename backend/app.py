@@ -15,13 +15,13 @@ import os
 app = Flask(__name__)
 
 cors = CORS(app)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('./models/model.pkl', 'rb'))
 # model2 = pickle.load(open('model2.pkl', 'rb'))
 
 # print(dir(model2))
 
 # Load the dataset
-data = pd.read_csv('Budget.csv')
+data = pd.read_csv('./data/Budget.csv')
 
 # Split the data into input features (X) and target variable (y)
 X = data.drop('Budget', axis=1)
